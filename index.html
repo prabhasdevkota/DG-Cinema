@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - DG Cinema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="butterfly"></div>
+        <div class="login-form">
+            <h1>DG Cinema</h1>
+            <h2>User Login</h2>
+            <div class="country-code-container">
+                <select id="loginCountryCode" required>
+                    <option value="" disabled selected>Select Country Code</option>
+                    <option value="+1">🇺🇸 +1 (USA)</option>
+                    <option value="+44">🇬🇧 +44 (UK)</option>
+                    <option value="+91">🇮🇳 +91 (India)</option>
+                    <option value="+61">🇦🇺 +61 (Australia)</option>
+                    <option value="+81">🇯🇵 +81 (Japan)</option>
+                    <option value="+977">🇳🇵 +977 (Nepal)</option>
+                    <!-- Add more country codes as needed -->
+                </select>
+                <input type="text" id="loginIdentifier" placeholder="Phone Number" required>
+            </div>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <p id="message"></p>
+            <p><a href="forgot-password.html">Forgot Password?</a></p>
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            <h2>Admin Login</h2>
+            <input type="text" id="adminId" placeholder="Admin ID" required>
+            <input type="password" id="adminPassword" placeholder="Admin Password" required>
+            <button onclick="adminLogin()">Admin Login</button>
+            <p id="adminMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

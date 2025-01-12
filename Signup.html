@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page - DG Cinema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="butterfly"></div>
+        <div class="signup-form">
+            <h1>DG Cinema</h1>
+            <h2>Sign Up</h2>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="middleName" placeholder="Middle Name">
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email/Apple ID" required>
+            <input type="date" id="dob" required>
+            <div class="country-code-container">
+                <select id="countryCode" required>
+                    <option value="" disabled selected>Select Country Code</option>
+                    <option value="+1">🇺🇸 +1 (USA)</option>
+                    <option value="+44">🇬🇧 +44 (UK)</option>
+                    <option value="+91">🇮🇳 +91 (India)</option>
+                    <option value="+61">🇦🇺 +61 (Australia)</option>
+                    <option value="+81">🇯🇵 +81 (Japan)</option>
+                    <option value="+977">🇳🇵 +977 (Nepal)</option>
+                    <!-- Add more country codes as needed -->
+                </select>
+                <input type="text" id="identifier" placeholder="Phone Number" required>
+            </div>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                < option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <button onclick="signup()">Sign Up</button>
+            <p id="signupMessage"></p>
+            <p>Already have an account? <a href="index.html">Login</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

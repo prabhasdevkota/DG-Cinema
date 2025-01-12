@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification - DG Cinema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="butterfly"></div>
+        <div class="otp-form">
+            <h1>DG Cinema</h1>
+            <h2>OTP Verification</h2>
+            <p>Please enter the OTP sent to your registered phone number.</p>
+            <input type="text" id="otp" placeholder="Enter OTP" required>
+            <button onclick="verifyOTP()">Verify OTP</button>
+            <p id="otpMessage"></p>
+            <p>Didn't receive the OTP? <a href="#">Resend OTP</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
